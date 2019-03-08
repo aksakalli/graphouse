@@ -65,7 +65,7 @@ public class MetricRetention {
         if (function.equals("")) {
             return typeRetention;
         }
-        if (getStepSize(0) == 0) {
+        if (ranges.toString().equals("[[0..+∞)=0]")) {
             return typeAggregation;
         }
         return typeAll;
